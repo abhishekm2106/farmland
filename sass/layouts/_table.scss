@@ -1,0 +1,79 @@
+.table-section{
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    
+}
+
+
+table{
+    // background-color: darkorange;
+    width: 100%;
+    border: none;
+
+    tr{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    th{
+        color: rgb(151, 151, 151);
+        text-transform: uppercase;
+        flex: 1;
+        font-size: 1.1rem;
+        // border: 2px solid royalblue;
+
+    }
+
+    td{
+        text-align: center;
+        flex: 1;
+        // border: 2px solid royalblue;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: black;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crop-id-h{
+        flex: 2;
+    }
+
+    
+
+
+    .table-row{
+        margin-top: 1rem;
+        background-color: white;
+        border-radius: 2px;
+        box-shadow: 0 3rem 6rem rgba($color: #000000, $alpha: .15);
+
+        .crop-id{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 2;
+            text-transform: capitalize;
+
+            .row-image{
+                height: 5rem;
+                display: inline-block;
+                transform: scale(1.4);
+            }
+    
+            .crop-name{
+                margin-left: .6rem;
+                display: inline-block;
+    
+            }
+
+        }
+
+
+
+    }
+}

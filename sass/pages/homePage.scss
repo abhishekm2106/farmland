@@ -1,0 +1,215 @@
+@import "../abstract/variables";
+@import "../base/typography";
+@import "../layouts/headerNavBar";
+@import "../layouts/footer";
+@import "../components/card";
+@import "../components/buttons";
+@import "../base/base";
+@import "../base/utilities";
+
+
+/* background */
+
+.tripleColor{
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.first-image{
+    height: 95vh;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+    z-index: -1;
+    
+}
+
+.leaves{
+    width: 70vw;
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+
+
+a,
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+h1{
+    font-size: 4.5rem;
+    color: $base-blue;
+}
+
+
+
+.bold{
+    font-weight: 700;
+}
+
+
+
+.white-box{
+    height: 100vh;
+}
+
+
+.item{
+    border-radius: 10rem;
+    background-color:$base-blue;
+    height: 7rem;
+}
+
+.item-desc{
+    background-color: #28b485;
+    border-radius: 10rem;
+    height: 5rem;
+}
+
+.vegi-icon{
+    height: 5.5rem;
+}
+
+.white{
+    color: white;
+}
+
+.price{
+    align-content: center;
+}
+
+
+.retailers{
+    margin-top: -12em;
+}
+
+
+
+/* ----------------------------------------------- */
+
+.find-farmers{
+    margin: 14rem 0rem -1.5rem;
+}
+
+
+
+.dotted{
+    height: 80vh;
+    background-image: url("../images/Group 58.png");
+    /* copyright@Abhsihek-Mohanty */
+    background-size: 80rem;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    z-index: -1;
+}
+
+.leaves-2{
+    position: absolute;
+    
+}
+
+.quote{
+    font-family: Remachine Script Personal Use;
+    font-size: 4rem;
+}
+
+.quote-by{
+    font-size: 2rem;
+    text-align: right;
+}
+
+
+.sliding-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sliding-data{
+    display: flex;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    z-index: 10;
+    font-size: 4rem;
+    transform: translate(0, -50%);
+
+}
+
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    z-index: 10;
+    cursor: pointer;
+    transform: translate(0, -50%);
+}
+
+.quote-div{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .white-box{
+        height: 95vh;
+    }
+
+    .get-started{
+        margin-bottom: 5rem;
+    }
+
+    .tripleColor{
+        top:115rem;
+    }
+
+    .find-farmers{
+        margin-top: 3rem;
+    }
+    .retailers{
+        margin-top: 0;
+    }
+
+    .top-leave{
+        position: absolute;
+        top: .5rem;
+        right: -1.5rem;
+        transform: rotate(20deg);
+        height: 8rem;
+        border: none;
+        display: none;
+    }
+
+
+    .last{
+        margin-top: -30rem;
+    }
+    .page-links{
+        width: 95%;
+    }
+
+
+    .quote{
+        font-size:3rem;
+    }
+    
+    .quote-by{
+        font-size: 1rem;
+        text-align: right;
+    }
+    
+}

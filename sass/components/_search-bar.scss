@@ -1,0 +1,29 @@
+.search{
+    position: relative;
+    display: block;
+    width: 100%;
+
+
+    &-box{
+        border:none;
+        border-radius: .5rem;
+        padding: 1rem 1.5rem;
+        background-color: $light-blue-grey;
+        width: 100%;
+        
+
+        &:focus + .fa-search{
+            display: none;
+        }
+    }
+
+    .fa-search{
+        position: absolute;
+        color: $base-blue;
+        font-size: 1.8rem;
+        right: .5rem;
+        top: .8rem;
+
+
+    }
+}

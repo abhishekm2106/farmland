@@ -1,0 +1,202 @@
+.footer{
+    width: 100%;
+    display: block;
+    position: relative;
+
+    &__logo{
+        margin-top: -2rem;
+        margin-bottom: 1.5rem;
+
+        &-text{
+            font-size: 5rem;
+            font-family: Remachine Script Personal Use;
+        }
+    }
+    
+
+    &__top{
+        
+        background-color: $base-blue;
+
+        &__row{
+            padding: 5rem 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__big-col{
+            height: 100%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            color: white;
+
+
+            .about-us{
+                font-size: 1.3rem;
+                margin-bottom: $font-size-footer;
+                border-left: .5rem solid $primary-green;
+                padding-left: 1rem;
+                width: 90%;
+            }
+
+            .contact{
+                font-size: $font-size-footer;
+                margin-bottom: 1rem;
+            }
+
+            .email{
+                font-size: $font-size-footer;
+                margin-bottom: 4rem;
+            }
+
+            .social{
+                width: 75%;
+                display: flex;
+                justify-content: space-between;
+                font-size: 2.5rem;
+
+                & > *:hover{
+                    color: $primary-green;
+                    cursor: pointer;
+                }
+
+            }
+        }
+
+        &__col{
+            height: 100%;
+            width: 16%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &-links{
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 2rem;
+            width: 7rem;
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+            &__heading{
+                font-size: 1.4rem;
+                color: burlywood;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+
+
+
+    
+
+
+
+    &__mid{
+        background-color: $secondary-green;
+
+        &__list{
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 2rem 0;
+
+            &__element{
+                font-weight: 600;
+                font-size: 1.2rem;
+                color: aliceblue;
+
+                &:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+
+            }
+
+        }
+    }
+
+    .copyright-tag{
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: rgb(184, 153, 255);
+        font-weight: 500;
+        font-size: .8rem;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-links{
+    width: 70%;
+    height: 70rem;
+    margin: 0 auto;
+    padding-top: 48rem;
+}
+
+.last{
+    background-image: url("../images/Group 57.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -10rem;
+}
+
+.links-heading{
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.bottom-links{
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}

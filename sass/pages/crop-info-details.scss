@@ -1,0 +1,106 @@
+@import "../abstract/variables";
+@import "../base/typography";
+@import "../base/base";
+@import "../base/utilities";
+@import "../layouts/headerNavBar";
+@import "../layouts/footer";
+@import "../components/card";
+@import "../components/buttons";
+@import "../components/info-card";
+@import "../components/search-bar";
+
+.basic-info{
+
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 10rem auto 4rem;
+    
+
+
+    &__image{
+        height: 15%;
+        width: 15%;
+        border-radius: 100%;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .image-source{
+            width: 100%;
+            height: 100%;
+        }
+
+
+    }
+
+    &__data{
+        width: 65%;
+    }
+}
+
+
+.all-info{
+    width: 85%;
+    margin: 0 auto;
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+        padding: 2rem 0;
+        border-bottom: .4px  solid $base-blue;
+    
+        &__item{
+            color: #476299;
+            font-size: 1.4rem;
+            cursor: pointer;
+            font-weight: 500;
+            flex: 1;
+            text-align: center;
+        }
+
+        & .active{
+            color: $base-blue;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+    }
+
+    & .tab-indicator {
+        position:relative;
+        width:calc(100% / 6);
+        height:4px;
+        background:$base-blue;
+        top: -4px;
+        left:0px;
+        border-radius:8px 8px 0 0 ; 
+        transition:all .4s ease-in-out;
+    }
+
+    &__content{
+        position: relative;
+
+
+        & > div{
+            display: none;
+            // position: absolute;
+            opacity: 0;
+            transform: scale(.8);
+            padding: 3rem;
+            transition: all .5s ease-in-out;
+
+            &.active{
+                display: block;
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+
+
+}
+

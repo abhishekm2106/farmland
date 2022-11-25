@@ -1,0 +1,128 @@
+.myButton{
+    padding: 1rem 3rem;
+    border-radius: 10rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.mainButtn{
+    background-image:linear-gradient(to right bottom,#7ed56f,#28b485);
+    color:white;
+}
+
+.seeMore{
+    color: #071A52;
+    border-color: #071A52;
+    text-align: center;
+    border-width: .3rem;
+    border-style: solid;
+    font-weight: 700;
+    background-color: white;
+}
+
+.seeMore:hover{
+    color: #071A52;
+}
+
+
+.myButton:link,
+.myButton:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    display: inline-block;
+    transition: all .2s;
+    font-size: 1.6rem;
+}
+
+.myButton:hover{
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.myButton:active{
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+
+.fa-arrow-right{
+    margin-left: 2rem;
+}
+
+.circle-btn {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.slide-butn{
+    position: absolute;
+    color: #071A52;
+    font-size: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.big-button{
+    height: 10rem;
+    border-radius: 5px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:hover &__heading{
+        font-size: 2rem;
+    }
+
+    &:hover &__image{
+        transform: scale(1);
+        filter: blur(1px) brightness(65%);
+    }
+
+    &__heading{
+        font-size: 1.6rem;
+        color: white;
+        transition: all .5s;
+    }
+
+    &__image{
+        transform: scale(1.1) ;
+        z-index: -10;
+        position: absolute;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all .5s;
+    }
+
+    &__purple{
+
+        background-image: linear-gradient(90deg, rgba(61,0,158,1) 0%, rgba(152,0,181,.5) 100%),url(https://miro.medium.com/max/2560/0*R5pC0bAlYxH_nTlF.jpg);
+    }
+
+    
+    &__blue{
+        background-image: linear-gradient(90deg,#3a47d5  0%,#00d0ffb9 100%),url(https://blog.zoho.com/wp-content/uploads/2019/10/SMS-marketing-campaigns-Blog-Bnr.jpg);
+    }
+
+    &__green{
+        background-image: linear-gradient(90deg,rgba($primary-dark,1),rgba($primary-light,.7)),url(https://wallpapercave.com/wp/wp3106251.jpg);
+    }
+}
+

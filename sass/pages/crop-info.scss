@@ -1,0 +1,55 @@
+@import "../abstract/variables";
+@import "../base/typography";
+@import "../base/base";
+@import "../base/utilities";
+@import "../layouts/headerNavBar";
+@import "../layouts/footer";
+@import "../components/card";
+@import "../components/buttons";
+@import "../components/info-card";
+@import "../components/search-bar";
+
+
+.info-section {
+    margin: 10rem auto;
+    display: flex;
+    width: 100%;
+
+    .filter-div {
+        width: 25%;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 18%;
+
+    }
+
+    .card-list {
+
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:800px)  { 
+    .info-section{
+        flex-direction: column;
+
+        .filter-div {
+
+            width: 100%;
+        }
+    
+        .card-list {
+            width: 100%;
+        }
+
+
+    }
+}

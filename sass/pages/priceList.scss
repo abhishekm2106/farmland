@@ -1,0 +1,36 @@
+@import "../abstract/variables";
+
+@import "../base/typography";
+@import "../base/base";
+@import "../base/utilities";
+
+@import "../layouts/headerNavBar";
+@import "../layouts/footer";
+@import "../layouts/table";
+
+@import "../components/card";
+@import "../components/buttons";
+@import "../components/info-card";
+@import "../components/search-bar";
+
+
+.table-filter{
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem 0;
+
+    .filter{
+
+        width: 25%;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+
+    }
+
+    .table-section{
+        width: 75%;
+    }
+}

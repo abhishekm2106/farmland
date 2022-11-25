@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../fonts/RemachineScript_Personal_Use.ttf">
+    <script src="https://kit.fontawesome.com/624a445125.js" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+
+    <!-- css -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .find-f{
+            margin: 14rem 0rem -1.5rem;
+        }
+
+        .name-card{
+            position: relative;
+            margin: 3rem;
+            flex-basis: 20rem;
+            flex-grow: 0;
+            flex-shrink: 0;
+            height: 33rem;
+            box-shadow: 1rem 1rem 2.5rem rgba(0, 0, 0, 0.5);
+            border-radius: 2rem;
+            padding: 1.5rem;
+            background-color: white;
+        }
+
+        .rating{
+            margin: 2rem;
+            width: 4.5rem;
+            height: 2.4rem;
+            border-radius: .5rem;
+            background-color: #28b485;
+            color: white;
+            font-size: 1.2rem;
+            padding: .1rem;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .dp{
+            background-image: url("https://tse1.mm.bing.net/th/id/OIP.tL_5kYaa5j25DyN36rKVWQHaJD?pid=Api&rs=1");
+            height: 12rem;
+            width: 12rem;
+            clip-path: circle(50% at 50% 50%);
+            background-size: cover;
+        }
+
+        .name{
+            line-height: 2.2rem;
+            font-size: 2rem;
+            color: #071A52;
+            font-weight: 700;
+        }
+
+        .location{
+            font-size: 1.6rem;
+            color: #071A52;
+        }
+
+        .fa-star{
+            margin-left: .3rem;
+        }
+
+        div.name-card {
+        display: inline-block;
+        }
+
+
+        /* ------------------------------------- */
+
+
+        .sliding-container{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sliding-data{
+            display: flex;
+        }
+
+        .next{
+            position: absolute;
+            top: 50%;
+            right: 1%;
+            z-index: 10;
+            font-size: 4rem;
+            transform: translate(0, -50%);
+
+        }
+
+        .prev{
+            position: absolute;
+            top: 50%;
+            left: 1%;
+            z-index: 10;
+            cursor: pointer;
+            transform: translate(0, -50%);
+        }
+
+        .circle-btn {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            width: 6rem;
+            height: 6rem;
+            cursor: pointer;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-butn{
+            position: absolute;
+            color: #071A52;
+            font-size: 4rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .lm-bg{
+            background-color: rgb(88, 197, 152);
+            border-radius: 5rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="find-f border border-danger">
+        <div
+            class="row border border-warning justify-content-center justify-content-md-start align-items-center p-0 m-0">
+            <div
+                class="row justify-content-md-start justify-content-center col-9 col-md-5  text-center text-md-left get-started  border border-warning mt-5 mx-4">
+                <h1 class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ea?
+                </h1>
+                <p class="get-started-para col-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nemo repudiandae reiciendis harum totam sequi perferendis ullam aspernatur. Iure, fugiat?</p>
+            </div>
+        </div>
+
+
+        <!-- 1st copy -->
+        <div class="sliding-container">
+            <div class="circle-btn next">
+                <i class="fas fa-angle-right slide-butn" ></i>
+            </div>
+            <div class="circle-btn prev">
+                <i class="fas fa-angle-left slide-butn" ></i>
+            </div>
+
+
+            <div class="sliding-data">
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class="location text-center mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class="location text-center mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class="location text-center mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class="location text-center  mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <!-- 2nd copy -->
+        <div class="sliding-container">
+            <div class="circle-btn next">
+                <i class="fas fa-angle-right slide-butn" ></i>
+            </div>
+            <div class="circle-btn prev">
+                <i class="fas fa-angle-left slide-butn" ></i>
+            </div>
+
+
+            <div class="sliding-data">
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class="location text-center mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class="location text-center mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class="location text-center mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class="location text-center  mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="name-card ">
+                    <div class="d-flex flex-column align-items-center">
+                        <div class="dp mb-5 mt-3"></div>
+                        <div class="name text-center">Abhishek Mohanty</div>
+                        <div class=" text-center location mt-3">Ludhiana,punjab</div>
+                    </div>
+    
+                    <div class="rating d-flex flex-row align-items-center justify-content-center">
+                        <span>3.4</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const slidingData = document.querySelector(".sliding-data")
+        const slidingCard = document.querySelectorAll(".name-card")
+
+        const nextBtn = document.querySelector(".next")
+        const prevBtn = document.querySelector(".prev")
+
+        let counter = 0
+        const size = slidingCard[0].clientWidth
+
+        prevBtn.addEventListener("click", () => {
+            slidingData.style.transition = "transform .4s ease-in-out"
+
+            console.log(counter)
+            if (counter < 0) {
+                counter += 3
+                slidingData.style.transform = 'translateX(' + (counter * size) + 'px)'
+            }
+
+        })
+
+        nextBtn.addEventListener("click", () => {
+            slidingData.style.transition = "transform .4s ease-in-out"
+
+            console.log(counter)
+            if (counter > -4) {
+                counter -= 3
+                slidingData.style.transform = 'translateX(' + (counter * size) + 'px)'
+            }
+
+        })
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
